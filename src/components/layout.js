@@ -6,6 +6,7 @@ import Helmet from "react-helmet";
 const Header = () => (
   <div
     style={{
+      display: "flex",
       background: "black",
       marginBottom: "1.45rem"
     }}
@@ -13,8 +14,9 @@ const Header = () => (
     <div
       style={{
         margin: "0 auto",
-        maxWidth: 960,
-        padding: "1.45rem 1.0875rem"
+        maxWidth: 1000,
+        padding: "0rem",
+        paddingTop: "1.5rem"
       }}
     >
       <h1 style={{ margin: 0 }}>
@@ -28,7 +30,7 @@ const Header = () => (
           Willie Doherty
         </Link>
         <ul style={{ listStyle: "none", float: "right" }}>
-          <li style={{ display: "inline-block", marginRight: "1rem" }}>
+          <li style={{ display: "inline-block", marginRight: "1rem", marginLeft: "4rem" }}>
             <Link
               style={{
                 color: "white",

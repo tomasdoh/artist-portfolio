@@ -3,6 +3,6 @@ import Layout from "../components/layout"
 
 export default () => (
 <Layout>
-<h2> Artist </h2>
+<h2> I am an artiste </h2>
 </Layout>
 )
