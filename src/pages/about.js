@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 
 export default () => (
-<Layout >
+<Layout>
 <p>
 Willie Doherty was born in Derry, Northern Ireland in 1959. He lives in County Donegal and continues to work in Derry.
 </p>
