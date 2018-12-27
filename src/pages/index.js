@@ -1,10 +1,8 @@
 import React from "react"
+import Layout from "../components/layout"
 
 export default () => (
-<div style={{ margin: `3rem auto`, maxWidth: 600 }}>
-    {" "}
-    
-<h1>Willie Doherty</h1>
+<Layout>
 <h2> Artist </h2>
-</div>
+</Layout>
 )
