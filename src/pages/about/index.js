@@ -1,8 +1,14 @@
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../../components/layout"
+import Link from "gatsby-link"
 
 export default () => (
 <Layout>
+<p style={{ display: "flex", textAlign: "center", fontSize: "20px" }}>
+<Link style={{ color: "black"}} to="/about">Biography</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<Link style={{ color: "black"}} to="/about/exhibitions">Exhibitions</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<Link style={{ color: "black"}} to="/about/essays">Essays</Link>
+</p>
 <p>
 Willie Doherty was born in Derry, Northern Ireland in 1959. He lives in County Donegal and continues to work in Derry.
 </p>

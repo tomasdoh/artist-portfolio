@@ -13,11 +13,18 @@
   },
   "dependencies": {
     "gatsby": "^2.0.76",
+    "gatsby-image": "^2.0.25",
+    "gatsby-plugin-sharp": "^2.0.17",
     "gatsby-plugin-typography": "^2.2.4",
+    "gatsby-source-contentful": "^2.0.22",
+    "gatsby-source-filesystem": "^2.0.12",
+    "gatsby-transformer-sharp": "^2.1.9",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
+    "react-slick": "^0.23.2",
     "react-typography": "^0.16.18",
+    "slick-carousel": "^1.8.1",
     "typography": "^0.16.18",
     "typography-theme-st-annes": "^0.16.18"
   },

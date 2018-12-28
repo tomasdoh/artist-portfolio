@@ -7,7 +7,8 @@ const Header = () => (
   <div
     style={{
       display: "flex",
-      background: "black",
+      minHeight: "10vh",
+      background: "grey",
       marginBottom: "1.45rem"
     }}
   >
@@ -16,26 +17,27 @@ const Header = () => (
         margin: "0 auto",
         maxWidth: 1000,
         padding: "0rem",
-        paddingTop: "1.5rem"
+        paddingTop: "0.5rem"
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ margin: 20 }}>
         <Link
           to="/"
           style={{
-            color: "white",
+            color: "black",
             textDecoration: "none"
           }}
         >
           Willie Doherty
         </Link>
         <ul style={{ listStyle: "none", float: "right" }}>
-          <li style={{ display: "inline-block", marginRight: "1rem", marginLeft: "4rem" }}>
+          <li style={{ display: "inline-block", marginRight: "1rem", marginLeft: "0rem" }}>
             <Link
               style={{
-                color: "white",
+                color: "black",
                 textDecoration: "none",
-                fontSize: "x-large"
+                fontSize: "x-large",
+                hoverColor: "yellow"
               }}
               to="/about"
             >
@@ -45,7 +47,7 @@ const Header = () => (
           <li style={{ display: "inline-block", marginRight: "1rem" }}>
             <Link
               style={{
-                color: "white",
+                color: "black",
                 textDecoration: "none",
                 fontSize: "x-large"
               }}
@@ -57,7 +59,7 @@ const Header = () => (
           <li style={{ display: "inline-block", marginRight: "1rem" }}>
             <Link
               style={{
-                color: "white",
+                color: "black",
                 textDecoration: "none",
                 fontSize: "x-large"
               }}
@@ -83,7 +85,10 @@ const Layout = ({ children }) => (
         { charSet: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1.0" }
       ]}
-    />
+    >
+    <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    </Helmet>
     <Header />
     <div
       style={{
