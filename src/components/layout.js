@@ -36,7 +36,7 @@ const Header = () => (
               style={{
                 color: "black",
                 textDecoration: "none",
-                fontSize: "x-large",
+                fontSize: "large",
                 hoverColor: "yellow"
               }}
               to="/about"
@@ -49,7 +49,7 @@ const Header = () => (
               style={{
                 color: "black",
                 textDecoration: "none",
-                fontSize: "x-large"
+                fontSize: "large"
               }}
               to="/work"
             >
@@ -61,7 +61,7 @@ const Header = () => (
               style={{
                 color: "black",
                 textDecoration: "none",
-                fontSize: "x-large"
+                fontSize: "large"
               }}
               to="/contact"
             >
