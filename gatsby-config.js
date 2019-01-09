@@ -1,5 +1,6 @@
 module.exports = {
   plugins: [
+    "gatsby-plugin-catch-links",
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -7,20 +8,39 @@ module.exports = {
       },
     },
     {
-     resolve: `gatsby-source-contentful`,
+     resolve: `gatsby-source-filesystem`,
      options: {
-       spaceId: `fqdt5x5nnmve`,
-       accessToken: `13cd7b35c7391a0a0f0d5d888eac2e1476e3f7cd3e1dd1527d7230711289494f`,
+       path: `${__dirname}/src/images`,
+       name: 'images',
       },
     },
     {
      resolve: `gatsby-source-filesystem`,
      options: {
-       path: `${__dirname}/src/images`,
-      name: 'images',
+       path: `${__dirname}/src/pages`,
+       name: 'pages',
       },
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp'
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+        {
+          resolve: `gatsby-remark-better-embed-video`,
+          options: {
+            width: 800,
+            related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
+            noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
+            showInfo: false
+          },
+        },
+        {
+          resolve: `gatsby-remark-responsive-iframe`,
+        },
+        ]
+      }
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`
   ],
 }

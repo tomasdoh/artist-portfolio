@@ -9,36 +9,36 @@ import 'slick-carousel/slick/slick-theme.css'
 
 const IndexPage  = (props) => (
   <Layout>
-  <Slider infinite={true} slidesToShow={1} autoplay={true} autoplaySpeed={8000} fade={true} >
+  <Slider infinite={true} slidesToShow={1} width={60} autoplay={true} autoplaySpeed={6000} fade={true} pauseOnHover={false} >
     <div>
       <Img fluid={props.data.waiting.childImageSharp.fluid} />
       <br/>
-      <b><i>Waiting</i></b>, 1988
+      <i>Waiting</i>, 1988
     </div>
     <div>
       <Img fluid={props.data.remains.childImageSharp.fluid} />
       <br/>
-      <b><i>Remains (Kneecapping Behind Creggan Shops)</i></b>, 2013
+      <i>Remains (Kneecapping Behind Creggan Shops)</i>, 2013
     </div>
     <div>
       <Img fluid={props.data.silence.childImageSharp.fluid} />
       <br/>
-      <b><i>Silence After a Kneecapping</i></b>, 1985
+      <i>Silence After a Kneecapping</i>, 1985
     </div>
     <div>
       <Img fluid={props.data.distance.childImageSharp.fluid} />
       <br/>
-      <b><i>Critical Distance</i></b>, 1997
+      <i>Critical Distance</i>, 1997
     </div>
     <div>
       <Img fluid={props.data.fence.childImageSharp.fluid} />
       <br/>
-      <b><i>Wire Fence and Blue Sky</i></b>, 2004
+      <i>Wire Fence and Blue Sky</i>, 2004
     </div>
     <div>
       <Img fluid={props.data.border.childImageSharp.fluid} />
       <br/>
-      <b><i>Border Road</i></b>, 1994
+      <i>Border Road</i>, 1994
     </div>
   </Slider>
   </Layout>
