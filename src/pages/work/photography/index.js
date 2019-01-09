@@ -1,10 +1,12 @@
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../../../components/layout"
 import Img from "gatsby-image"
 import { graphql } from 'gatsby'
+import Menu from "../../../components/workMenu"
 
 const Work = (props) => (
   <Layout>
+  <Menu />
   <Img fluid={props.data.remains.childImageSharp.fluid} />
   </Layout>
 )

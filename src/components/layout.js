@@ -36,8 +36,7 @@ const Header = () => (
               style={{
                 color: "black",
                 textDecoration: "none",
-                fontSize: "large",
-                hoverColor: "yellow"
+                fontSize: "large"
               }}
               to="/about"
             >
