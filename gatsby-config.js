@@ -1,6 +1,8 @@
 module.exports = {
   plugins: [
-    "gatsby-plugin-catch-links",
+    `gatsby-plugin-catch-links`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -40,7 +42,5 @@ module.exports = {
         ]
       }
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`
   ],
 }

@@ -50,42 +50,42 @@ export const pageQuery = graphql`
   query {
     waiting: file(relativePath: { eq: "1988-Waiting-CMYK.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 630) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     remains: file(relativePath: { eq: "remains_1.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 630) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     silence: file(relativePath: { eq: "SilenceAfterAKneecaping1985.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 630) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     border: file(relativePath: { eq: "Border-Road.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 630) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     fence: file(relativePath: { eq: "wire-fence.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 630) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     distance: file(relativePath: { eq: "CriticalDistance.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 630) {
           ...GatsbyImageSharpFluid
         }
       }
