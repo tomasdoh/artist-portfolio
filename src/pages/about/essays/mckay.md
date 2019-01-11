@@ -2,7 +2,7 @@
 path: "/about/essays/mckay"
 title: "Susan McKay - ‘And so they are ever returning to us, the dead’: Willie Doherty in Derry"
 date: "2013"
-featuredImage: "../../video/ghost-story.png"
+featuredImage: ""
 ---
 
 > *It has become a distant memory<br>

@@ -28,19 +28,20 @@ export default function Index({ data }) {
 }
 
 export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark {
-      edges {
-        node {
-          frontmatter {
-            title
-            date(formatString: "YYYY")
-            path
-            featuredImage {
-                childImageSharp{
-                  fluid(maxWidth: 1000) {
-                    ...GatsbyImageSharpFluid
-                }
+query VideoQuery {
+  allMarkdownRemark(filter: { frontmatter: { path: {regex: "/work/video/" } } },
+  sort: { fields: [frontmatter___date], order: DESC },
+  limit: 1000) {
+    edges {
+      node {
+        frontmatter {
+          title
+          date(formatString: "YYYY")
+          path
+          featuredImage {
+              childImageSharp{
+                fluid(maxWidth: 1000) {
+                  ...GatsbyImageSharpFluid
               }
             }
           }
@@ -48,4 +49,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+}`

@@ -13,10 +13,13 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "dependencies": {
+    "@reach/dialog": "^0.1.2",
+    "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.0.89",
     "gatsby-image": "^2.0.25",
     "gatsby-plugin-catch-links": "^2.0.9",
     "gatsby-plugin-sharp": "^2.0.17",
+    "gatsby-plugin-styled-components": "^3.0.4",
     "gatsby-plugin-typography": "^2.2.4",
     "gatsby-remark-better-embed-video": "^2.4.0",
     "gatsby-remark-embed-video": "^1.7.0",
@@ -29,6 +32,7 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-helmet": "^5.2.0",
+    "react-images": "^0.5.19",
     "react-player": "^1.8.0",
     "react-responsive-embed": "^2.1.0",
     "react-slick": "^0.23.2",
@@ -37,6 +41,7 @@
     "react-vimeo": "^2.0.0",
     "redux": "^4.0.1",
     "slick-carousel": "^1.8.1",
+    "styled-components": "^4.1.3",
     "typography": "^0.16.18",
     "typography-theme-st-annes": "^0.16.18",
     "video-react": "^0.13.1"
